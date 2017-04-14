@@ -18,5 +18,5 @@ The format is the following:
              
 On the Todo list is to add a feature to create quizes within the program.             
 
-Written in C# and using Windows Forms.
+Written in C# to practice using Windows Forms.
 
