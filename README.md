@@ -1,5 +1,7 @@
 # Quick-Quiz
 
+![alt tag](https://raw.githubusercontent.com/konieboy/Quick-Quiz/master/Quick Quiz/Quiz Files/Screenshot.PNG)
+
 Quick Quiz allows you to load questions in a json format and then answer those questions in the form of a Quiz.
 
 The format is the following:
