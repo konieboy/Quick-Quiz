@@ -1,6 +1,6 @@
 # Quick-Quiz
 
-<center>![alt tag](https://raw.githubusercontent.com/konieboy/Quick-Quiz/master/Quick%20Quiz/Quiz%20Files/Screenshot.PNG)<center>
+->![alt tag](https://raw.githubusercontent.com/konieboy/Quick-Quiz/master/Quick%20Quiz/Quiz%20Files/Screenshot.PNG)<-
 
 Quick Quiz allows you to load questions in a json format and then answer those questions in the form of a Quiz.
 
