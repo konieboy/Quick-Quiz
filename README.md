@@ -15,9 +15,9 @@ The format is the following:
                 "answerD": "5",
                 "correctAnswer": "2"
              }
-         
+```      
 ***See ExampleQuiz.json for a full example***
-```
+
              
 On the Todo list is to add a feature to create quizes within the program.             
 
