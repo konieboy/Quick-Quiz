@@ -13,7 +13,7 @@
     {
             "Question": 
             {
-                "question": "What sound does a dog make",
+                "question": "What sound does a dog make?",
                 "answerA": "Woof",
                 "answerB": "Meow",
                 "answerC": "Hiss",
@@ -24,12 +24,12 @@
     {
         "Question":
             {
-                "question": "What is 1+2?",
-                "answerA": "3",
-                "answerB": "2",
-                "answerC": "4",
-                "answerD": "5",
-                "correctAnswer": "3"
+                "question": "Last month, the balance in Tisha's checkbook was $1219.17. Since then she\nhas deposited her latest paycheck of $2425.66 and written checks for \n$850.00 (rent), $235.89 (car payment), and $418.37 (credit card payment)",
+                "answerA": "$921.40",
+                "answerB": "$2,140.57",
+                "answerC": "$3,215.27",
+                "answerD": "$5,149.09",
+                "correctAnswer": "$2,140.57"
             }
 
     }
