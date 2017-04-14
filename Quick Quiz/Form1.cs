@@ -72,7 +72,6 @@ namespace Quick_Quiz
         private void StartButton_Click(object sender, EventArgs e)
         {
             //Launch new form with Quiz
-
             QuizForm quizUI = new QuizForm(QuizQuestions);
             quizUI.Show();
             this.Hide();

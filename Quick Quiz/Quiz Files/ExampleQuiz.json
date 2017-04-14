@@ -21,17 +21,6 @@
                 "correctAnswer": "Woof"
             }
     },
-        {
-            "Question": 
-            {
-                "question": "What is 4+1?",
-                "answerA": "3",
-                "answerB": "2",
-                "answerC": "4",
-                "answerD": "5",
-                "correctAnswer": "5"
-            }
-    },
     {
         "Question":
             {

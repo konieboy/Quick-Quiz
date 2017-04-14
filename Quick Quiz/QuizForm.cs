@@ -56,11 +56,23 @@ namespace Quick_Quiz
                 {
                     chosenAnswers.Add(QuesionNumber, Tuple.Create(labelAnswer1.Text, checkQuestion1));
                 }
+                if (QuizQuestions.Count == chosenAnswers.Count)
+                {
+                    ButtonNext.Enabled = true;
+                }
+
             }
             else
             {
                 chosenAnswers.Remove(QuesionNumber);
+                if (ButtonNext.Text == "Finish")
+                {
+                    ButtonNext.Enabled = false;
+                }
+
             }
+
+
         }
 
         private void checkQuestion2_Click(object sender, EventArgs e)
@@ -79,10 +91,18 @@ namespace Quick_Quiz
                 {
                     chosenAnswers.Add(QuesionNumber, Tuple.Create(labelAnswer2.Text, checkQuestion2));
                 }
+                if (QuizQuestions.Count == chosenAnswers.Count)
+                {
+                    ButtonNext.Enabled = true;
+                }
             }
             else
             {
                 chosenAnswers.Remove(QuesionNumber);
+                if (ButtonNext.Text == "Finish")
+                {
+                    ButtonNext.Enabled = false;
+                }
             }
 
         }
@@ -104,10 +124,18 @@ namespace Quick_Quiz
                 {
                     chosenAnswers.Add(QuesionNumber, Tuple.Create(labelAnswer3.Text, checkQuestion3));
                 }
+                if (QuizQuestions.Count == chosenAnswers.Count)
+                {
+                    ButtonNext.Enabled = true;
+                }
             }
             else
             {
                 chosenAnswers.Remove(QuesionNumber);
+                if (ButtonNext.Text == "Finish")
+                {
+                    ButtonNext.Enabled = false;
+                }
             }
         }
 
@@ -129,10 +157,18 @@ namespace Quick_Quiz
                 {
                     chosenAnswers.Add(QuesionNumber, Tuple.Create(labelAnswer4.Text, checkQuestion4));
                 }
+                if (QuizQuestions.Count == chosenAnswers.Count)
+                {
+                    ButtonNext.Enabled = true;
+                }
             }
             else
             {
                 chosenAnswers.Remove(QuesionNumber);
+                if (ButtonNext.Text == "Finish")
+                {
+                    ButtonNext.Enabled = false;
+                }
             }
         }
 
@@ -140,6 +176,8 @@ namespace Quick_Quiz
         {
 
             QuesionNumber -= 1;
+
+            ButtonNext.Enabled = true;
 
             //TODO - put this in initQuestions
             ButtonNext.Text = "Next";
@@ -172,6 +210,17 @@ namespace Quick_Quiz
             {
                 //Change NextBox text to Finish
                 ButtonNext.Text = "Finish";
+
+                //TODO Only enable if 
+                if (chosenAnswers.Count != QuizQuestions.Count)
+                {
+                    ButtonNext.Enabled = false;
+                }
+                else
+                {
+                    ButtonNext.Enabled = true;
+                }
+
             }
 
             //Check if this is the last question
@@ -181,7 +230,9 @@ namespace Quick_Quiz
                 //Hide Quiz Screen
                 this.Close();
                 //Show results screen
-
+                ResultsScreen resultsScreen = new ResultsScreen(QuizQuestions, chosenAnswers, QuesionNumber + 1);
+                resultsScreen.Show();
+                this.Hide();
             }
             else
             {

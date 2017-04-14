@@ -70,6 +70,12 @@
     <Compile Include="QuizForm.Designer.cs">
       <DependentUpon>QuizForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ResultsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultsScreen.Designer.cs">
+      <DependentUpon>ResultsScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +90,9 @@
     </Compile>
     <EmbeddedResource Include="QuizForm.resx">
       <DependentUpon>QuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultsScreen.resx">
+      <DependentUpon>ResultsScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
